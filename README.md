@@ -8,3 +8,9 @@ theme: jekyll-theme-merlot
   <li>Portfolio</li>
   <li>About me</li>
   <li>Future plan</li>
+
+<h2>Classes</h2>
+
+<ul>
+  <li>A</li>
+  <li>B<li>
