@@ -1,1 +1,12 @@
-theme: jekyll-theme-merlot
+<html> 
+<head>
+<title> Title of the page </title>
+</head>
+<body>
+
+<h1> My firt Heading </h1>
+<p>  My first paragraph </p>
+
+
+</head>
+</html>
