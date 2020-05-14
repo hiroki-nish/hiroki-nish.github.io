@@ -2,6 +2,10 @@
 <html>
 <head>
 <title>ウクレレ教室</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <style>
 	.img{
 		display:blocks;
@@ -10,10 +14,15 @@
 		width:calc( 13px*4 -4px );
 		height: auto;
 	}
+	.fakeimg {
+    height: 100px;
+	width: 150px;
+    background: #aaa;
+ 	 }	
 	.line{
 		float: left;
 		padding-bottom: 32px;
-		border:1px solid#fff;
+		border:1px solid lightblue;
 	}
 	.main{
 		background-color: lightblue;
@@ -23,6 +32,7 @@
     	border: 3px solid black;
 		border-radius: 50px;
 		width: 80%;
+		height:80%;
   }
 	}
 	.title{
@@ -35,35 +45,42 @@
 </style>
 </head>
 <body>
-	<h1>ウクレレ教室</h1>
-	<div>
+	<div class="jumbotron text-center">
+		<h1>ウクレレ教室</h1>
 		<p>弘樹セレクトの素敵なソングたちが勢ぞろい！</p>
 		<p>あんな曲から、こんな曲までたくさん詰まった宝箱</p>
 	</div>
-	<div>
-		<h2>
-			Songs
-			<ul><!--add more songs-->
-				<li>ルージュの伝言</li>
-				<li>かたつむり</li>
-				<li>Stand By Me</li>
-				<li></li>
-				<li>add more...</li>
-			</ul>
-		</h2>
-	</div>
-	<div class="main">
-		<div>
-			<h1 class="title">ルージュの伝言</h1>
-		</div>
-		<div>
+	<div class=row>
+		<div class="col-sm-4">
 			<h2>
-				<span>chords in this song</span>
+				Songs
+				<ul><!--add more songs-->
+					<li>ルージュの伝言</li>
+					<li>かたつむり</li>
+					<li>Stand By Me</li>
+					<li></li>
+					<li>add more...</li>
+				</ul>
 			</h2>
 		</div>
-		<div>
 
-		</div>
+		<div class="col-sm-8">
+			<div class="main">
+				<div>
+					<h1 class="title">ルージュの伝言</h1>
+				</div>
+				<div>
+					<h2>
+						<span>chords in this song</span>
+					</h2>
+					<div class="row">
+						<div class="fakeimg">chord img</div>
+						<span>C</span>
+						<div class="fakeimg">chord img</div>
+						<span>A</span>
+					</div>
+				</div>
+				
 				<div>
 					<h2>
 						<span> chords</span>
@@ -88,50 +105,260 @@
 						<div>うために</div>
 					</div>
 				</div>
-		<div>
 				<div class="line">
+					<span>
+						C
+						<br>
+						<!--TRY TO add <img>-->
+					</span>
+					<div>
+						<div>いまひとり列車に乗</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						Am
+						<br>
+					</span>
+					<div>
+						<div>ったの</div>
+					</div>
+				</div>
+				
+				<div class="line">
+					<span>
 
+						<br>
+					</span>
+					<div>
+						<div>たそが</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						F
+						<br>
+					</span>
+					<div>
+						<div>れせまる</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						G
+						<br>
+					</span>
+					<div>
+						<div>街並</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						C
+						<br>
+					</span>
+					<div>
+						<div>みや車の</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						Am
+						<br>
+					</span>
+					<div>
+						<div>流れ</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						F
+						<br>
+					</span>
+					<div>
+						<div>横目で</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						G
+						<br>
+					</span>
+					<div>
+						<div>追い越し</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						C
+						<br>
+					</span>
+					<div>
+						<div>て</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						    G
+						<br>
+					</span>
+					<div>
+						<div>             </div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						C
+						<br>
+						<!--TRY TO add <img>-->
+					</span>
+					<div>
+						<div>あの人はもう気づく</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						Am
+						<br>
+					</span>
+					<div>
+						<div>ころよ</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						C
+						<br>
+					</span>
+					<div>
+						<div>バスルームにルージュの</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						Am
+						<br>
+					</span>
+					<div>
+						<div>伝言</div>
+					</div>
+				</div>
+				
+				<div class="line">
+					<span>
+
+						<br>
+					</span>
+					<div>
+						<div>浮気</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						F
+						<br>
+					</span>
+					<div>
+						<div>な恋を</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						G
+						<br>
+					</span>
+					<div>
+						<div>はやくあ</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						C
+						<br>
+					</span>
+					<div>
+						<div>きらめない</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						Am
+						<br>
+					</span>
+					<div>
+						<div>かぎり</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						F
+						<br>
+					</span>
+					<div>
+						<div>うちには</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						G
+						<br>
+					</span>
+					<div>
+						<div>帰らな</div>
+					</div>
+				</div>
+				<div class="line">
+					<span>
+						C
+						<br>
+					</span>
+					<div>
+						<div>い</div>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-	<div class="main">
-		<div>
-			<h1 class="title">かたつむり</h1>
-		</div>
-		<div>
-			<h2>
-				<span>chords in this song</span>
-			</h2>
-		</div>
-		<div>
 
-		</div>
-		<div>
-			<h2>
-				<span> chords</span>
-			</h2>
-		</div>
-		<div class="line">
-		</div>	
-	</div>
-	<div class="main">
-		<div>
-			<h1 class="title">Stand By Me</h1>
-		</div>
-		<div>
-			<h2>
-				<span>chords in this song</span>
-			</h2>
-		</div>
-		<div>
+			<div class="main">
+				<div>
+					<h1 class="title">かたつむり</h1>
+				</div>
+				<div>
+					<h2>
+						<span>chords in this song</span>
+					</h2>
+				</div>
+				<div>
 
-		</div>
-		<div>
-			<h2>
-				<span> chords</span>
-			</h2>
-		</div>
-		<div class="line">
+				</div>
+				<div>
+					<h2>
+						<span> chords</span>
+					</h2>
+				</div>
+				<div class="line">
+				</div>	
+			</div>
+
+			<div class="main">
+				<div>
+					<h1 class="title">Stand By Me</h1>
+				</div>
+				<div>
+					<h2>
+						<span>chords in this song</span>
+					</h2>
+				</div>
+				<div>
+
+				</div>
+				<div>
+					<h2>
+						<span> chords</span>
+					</h2>
+				</div>
+				<div class="line">
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
