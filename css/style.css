@@ -4,7 +4,54 @@
     margin-bottom: 5px;
     padding: 20px;
     border: 3px solid black;
+    border-radius: 10px 100px / 120px;
+    width: 80%;
+    height:80%;
+}
+.chords{
+    margin-top: 40px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    background-color: white;
+    border: 1rem solid;
+}
+
+.img{
+    display:blocks;
+    padding:0px;
+    margin: 0.375em auto 0;
+    width:calc( 13px*4 -4px );
+    height: auto;
+}
+.fakeimg {
+height: 100px;
+width: 150px;
+background: #aaa;
+  }	
+.line{
+    float: left;
+    padding-bottom: 32px;
+    border:1px solid lightblue;
+}
+.main{
+    background-color: lightblue;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 20px;
+    border: 3px solid black;
     border-radius: 50px;
     width: 80%;
     height:80%;
+}
+
+.songs{
+    font-size: x-large;
+    font-style: oblique;
+    text align: center;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+    border-radius: 50px;
+    border:thin rgb(52, 94, 211);
 }
