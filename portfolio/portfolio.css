@@ -99,9 +99,12 @@ padding-right:30px;
 }
 #hako2a{
     width: 50%;
-    float:right;
+    float:left;
 }
 #hako3a{
     width:50%;
-    float:left;
+    float:right;
+}
+p {
+    font-size: 22px;
 }
