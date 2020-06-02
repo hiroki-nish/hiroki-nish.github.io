@@ -76,3 +76,32 @@ padding-right:30px;
     padding-right:30px;
     font-size: 20px;
 }
+#hako1{
+    width: 100%;
+}
+#hako2{
+    width: 50%;
+    float:right;
+}
+#hako3{
+    width:50%;
+    float:left;
+}
+/* .syashin img {
+    position: webkit-sticky;
+    position: sticky;
+    top:50px;
+    position:fixed; 
+} */
+
+#hako1a{
+    width: 100%;
+}
+#hako2a{
+    width: 50%;
+    float:right;
+}
+#hako3a{
+    width:50%;
+    float:left;
+}
