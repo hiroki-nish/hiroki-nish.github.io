@@ -2,12 +2,29 @@
 <html>
 <head>
 <title>Hiroki's Portfolio</title>
-<link rel="stylesheet" type="text/css" href="mystyle.css">>
+<link rel="stylesheet" type="text/css" href="portfolio.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script>
+	var navPos = jQuery( '#gnav' ).offset().top; // グローバルメニューの位置
+var navHeight = jQuery( '#gnav' ).outerHeight(); // グローバルメニューの高さ
+jQuery( window ).on( 'scroll', function() {
+  if ( jQuery( this ).scrollTop() > navPos ) {
+    jQuery( 'body' ).css( 'padding-top', navHeight );
+    jQuery( '#gnav' ).addClass( 'm_fixed' );
+  } else {
+    jQuery( 'body' ).css( 'padding-top', 0 );
+    jQuery( '#gnav' ).removeClass( 'm_fixed' );
+  }
+});
+</script>
 </head>
 <body>
     <header class="ヘッダー">
-		<h1 class="site-logo"><img src="https://github.com/hiroki-nish/hiroki-nish.github.io/blob/master/potfolio/img/samune.JPG?raw=true" alt="西堀弘樹"></h1>
-		<nav class="gnav">
+		<h1 class="samune"><img src="img/samune.JPG" alt="西堀弘樹"></h1>
+		<nav id="gnav">
+		<div class="inner">
 			<ul class="gnav__menu">
 				<li class="gnav__menu__item"><a href="">Home</a></li>
 				<li class="gnav__menu__item"><a href="">Artifacts</a></li>
@@ -15,7 +32,20 @@
 				<li class="gnav__menu__item"><a href="">Cover Letter</a></li>
 				<li class="gnav__menu__item"><a href="">日本語</a></li>
 			</ul>
+		</div>
 		</nav>
 	</header>
+	<div class="mic"><img src="https://i2-prod.nottinghampost.com/incoming/article1272084.ece/ALTERNATES/s615/GettyImages-614523672.jpg" width="1600" height="1200" alt="mic"></div>
+	<section>
+		<img class="bigpic" src="img/pic1.jpg" width="300" height="400">
+		<h1>Hello and welcome to Hiroki‘s portfolio.</h1>
+		<p>
+		Hello and welcome to Hiroki‘s portfolio.
+		I am Hiroki Nishibori, I was born March 1, 1999 in Shiga Japan. 
+		<br>
+		My whole life I wanted to see the world so I decided to come to the US when I was young. 
+		I am going to be graduating from University of Washington in spring 2020 and I am majoring in Media and Society.(MCS)(SEB)
+		</p>
+	</section>
 </body>
 </html>
