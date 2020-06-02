@@ -1,0 +1,58 @@
+.samune{
+    margin: 0 auto; 
+    float:left;  
+}
+.ヘッダー{
+    display:inline-block;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+.item{
+    display: inline-block;
+    font-size: 18;
+    color: black;
+}
+.header-list{
+    margin-left: 340px;
+    margin-top: 35px;
+}
+
+#header1{
+    width: 100%;
+}
+#header2{
+    width:30%;
+    float:left;
+}
+#header3{
+    width:70%;
+    float: right;
+}
+ul{
+    list-style: none;
+}
+.item1{
+    font-size: 22px;
+    color: black;
+    margin-right:10px
+}
+.anotation{
+    display:inline-block;
+    list-style: none;
+    width:1fx;
+
+}
+.anotation img {
+    width:30%;
+    height:30%;
+}
+.moji {
+    font-size: 20px;
+}
+.anotation-text{
+    
+}
+.anotation p{
+    color: cornflowerblue;
+    font-size: 30px;
+}
