@@ -140,9 +140,33 @@ body {
     border: 2px solid rgb(44, 44, 44);
   }
 
-  /* Bootstrap Code */
   .row { /*Jason added a CSS for the row class */
     background-color: white;
     border-style: solid;
     text-align: center;
   }
+  .button1 {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+  .button2 {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
