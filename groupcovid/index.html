@@ -24,7 +24,12 @@
 function theTranslate() {
     document.getElementById("translation").innerHTML = "Hello JavaScript";
 }
-
+var spanishwords = ["Hola", "Como estas?", "Familia", "Me gusta", "Pina"]
+document.getElementById("spanishword1").innerHTML = spanishwords[0];
+document.getElementById("spanishword2").innerHTML = spanishwords[1];
+document.getElementById("spanishword3").innerHTML = spanishwords[2];
+document.getElementById("spanishword4").innerHTML = spanishwords[3];
+document.getElementById("spanishword5").innerHTML = spanishwords[4];
 </script> <!--End of Jason JavaScript Code-->
 
 <style>    
@@ -145,19 +150,19 @@ function myFunction() {
         <table class="center"> <!-- Jason Estrada Second table with basic Spanish words -->
             <h2 class="headlines">Basic Spanish/Español Words</h2>
             <tr>
-                <td class="categories">Hello</td> <!-- English -->
+                <td class="categories" id="spanishword1">Hello</td> <!-- English -->
                 </tr>
                 <tr>
-                <td class="categories">How are you?</td> <!-- English -->
+                <td class="categories" id="spanishword2">How are you?</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories">Family</td> <!-- English -->
+                <td class="categories" id="spanishword3">Family</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories">I like</td> <!-- English -->
+                <td class="categories" id="spanishword4">I like</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories">Pineapple</td> <!-- English -->
+                <td class="categories" id="spanishword5">Pineapple</td> <!-- English -->
             </tr>
         </table>
         <!--This button will translate the table above-->
