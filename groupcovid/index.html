@@ -21,25 +21,41 @@
 <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Phillip started the stylesheet -->
 
 <script> //Jason JavaScript Code
+//this function will translate the table that has the basic Spanish/English table
 function theTranslate() {
-    var spanishwords = ["Hola", "Como estas?", "Familia", "Me gusta", "Piña"];
+    var spanishwords = ["Hola", "Como estas?", "Familia", "Me gusta", "Piña", "Uno", "Dos", "Tres", "Cuatro", "Cinco"];
     document.getElementById("spanishword1").innerHTML = spanishwords[0];
     document.getElementById("spanishword2").innerHTML = spanishwords[1];
     document.getElementById("spanishword3").innerHTML = spanishwords[2];
     document.getElementById("spanishword4").innerHTML = spanishwords[3];
     document.getElementById("spanishword5").innerHTML = spanishwords[4];
+    document.getElementById("spanishword6").innerHTML = spanishwords[5];
+    document.getElementById("spanishword7").innerHTML = spanishwords[6];
+    document.getElementById("spanishword8").innerHTML = spanishwords[7];
+    document.getElementById("spanishword9").innerHTML = spanishwords[8];
+    document.getElementById("spanishword10").innerHTML = spanishwords[9];
 }
+//this function will translate the rest of the text that is in Jason div box
 function TranslatePage() {
-    var translates = ["", "", "", "", "", "", "", "", "", "", ""];
-    document.getElementById("").innerHTML = translates[0];
-    document.getElementById("").innerHTML = translates[1];
-    document.getElementById("").innerHTML = translates[2];
-    document.getElementById("").innerHTML = translates[3];
-    document.getElementById("").innerHTML = translates[4];
-    document.getElementById("").innerHTML = translates[5];
-    document.getElementById("").innerHTML = translates[6];
-    document.getElementById("").innerHTML = translates[7];
-    document.getElementById("").innerHTML = translates[8];
+    var translates = ["Blog de Jason Estrada", "Hi! ¡Bienvenido a mi Blog/Publicaciones de Música!", "¡Este blog se usará para aprender conceptos básicos del idioma Español, lo que hago mientras estoy en cuarentena, y lo que me gusta hacer por diversión!", "Un tercio del blog será lo básico para aprender el idioma Español, lo que hago en mi casa durante ese día y la otra mitad estará dedicada a principiantes que quieran aprender acordes y las notas que se tocan para guitarra y otros instrumentos", "Sujeto", "Descripción", "Resultados", "Música", "Desde que tenía 9 años, he estado tocando instrumentos musicales", "He descubierto una plataforma de aplicación que te da la libertad de crear partituras como las que leí en la escuela secundaria y preparatoria.", "Adobe XD", "Recientemente descubrí la plataforma de Adobe XD que te permite crear diseños conceptuales para web, aplicaciones móviles y muchos más", "A través de una 'Masterclass' de uno de los expertos de Adobe XD pude crear una animación que se puede mostrar en transmisiones en vivo que promueve las redes sociales", "Palabras básicas en Español", "Nota de 6 cuerdas para guitarra de afinación correcta", "E (Cadena superior baja/Nota)", "E (Cadena inferior alta/Nota)", "El Acorde C",];
+    document.getElementById("Translate1").innerHTML = translates[0];
+    document.getElementById("Translate2").innerHTML = translates[1];
+    document.getElementById("Translate3").innerHTML = translates[2];
+    document.getElementById("Translate4").innerHTML = translates[3];
+    document.getElementById("Translate5").innerHTML = translates[4];
+    document.getElementById("Translate6").innerHTML = translates[5];
+    document.getElementById("Translate7").innerHTML = translates[6];
+    document.getElementById("Translate8").innerHTML = translates[7];
+    document.getElementById("Translate9").innerHTML = translates[8];
+    document.getElementById("Translate10").innerHTML = translates[9];
+    document.getElementById("Translate11").innerHTML = translates[10];
+    document.getElementById("Translate12").innerHTML = translates[11];
+    document.getElementById("Translate13").innerHTML = translates[12];
+    document.getElementById("Translate14").innerHTML = translates[13];
+    document.getElementById("Translate15").innerHTML = translates[14];
+    document.getElementById("Translate16").innerHTML = translates[15];
+    document.getElementById("Translate17").innerHTML = translates[16];
+    document.getElementById("Translate18").innerHTML = translates[17];
 }
 </script> <!--End of Jason JavaScript Code-->
 
@@ -130,36 +146,36 @@ function myFunction() {
 
 <!-- Jason Estrada Work -->
 <div class="JasonDivs"> <!-- Connection to CSS .JasonDivs (Jason Estrada)-->
-<h1 style="background-color: aqua; font-size: x-large;">Jason Estrada Blog</h1> 
-<h1 class="whitetext"><strong>Hola!</strong> Welcome to My <em>Blog/Music</em> Posts!</h1> <!-- first line of code in HTML -->
+<h1 id= "Translate1" style="background-color: aqua; font-size: x-large;">Jason Estrada Blog</h1> 
+<h1 id="Translate2" class="whitetext"><strong>Hola!</strong> Welcome to My <em>Blog/Music</em> Posts!</h1> <!-- first line of code in HTML -->
 <span class="whitetext">
-    <p>This blog will be used for learning basics for the <em>Spanish/Español</em> language, what I do while in <em>Quarantine</em> and what I like to do for fun!</p> <!-- Second line of code in HTML -->
-    <p id="translation">A third of the blog will be the basics for learning the Spanish/Español language, what I do at my house during that day and the other half will be dedicated for beginners that want to learn chords and the notes that is played for guitar and other instruments.</p> <!-- Third line of code in HTML -->
+    <p id="Translate3">This blog will be used for learning basics for the <em>Spanish/Español</em> language, what I do while in <em>Quarantine</em> and what I like to do for fun!</p> <!-- Second line of code in HTML -->
+    <p id="Translate4">A third of the blog will be the basics for learning the Spanish/Español language, what I do at my house during that day and the other half will be dedicated for beginners that want to learn chords and the notes that is played for guitar and other instruments.</p> <!-- Third line of code in HTML -->
 </span>
 <!--David: changes table so that ol tags are gone.-->
     
         <!--Jason added a grid in replace of the table.-->
     <div class="row">
-        <div class="col">Subject</div>
-        <div class="col">Description</div>
-        <div class="col">Results</div>
+        <div class="col" id="Translate5">Subject</div>
+        <div class="col" id="Translate6">Description</div>
+        <div class="col" id="Translate7">Results</div>
       </div>
   
       <div class="row">
-          <div class="col">Music</div>
-          <div class="col">Since I was 9 years old, I have been playing musical instruments</div>
-          <div class="col">I have discovered an application platform that gives you the freedom to create sheet music like the ones I read in Middle and High School</div>
+          <div class="col" id="Translate8">Music</div>
+          <div class="col" id="Translate9">Since I was 9 years old, I have been playing musical instruments</div>
+          <div class="col" id="Translate10">I have discovered an application platform that gives you the freedom to create sheet music like the ones I read in Middle and High School</div>
       </div>
   
   
       <div class="row">
-          <div class="col">Adobe XD</div>
-          <div class="col">Recently I discovered the platform of Adobe XD that let's you create conecept designs for web and mobile applications and many more</div>
-          <div class="col">Through a "Masterclass" from one of the Adobe XD experts I was able to create an animation that can be displayed in live streams that promoto the social media</div>
+          <div class="col" id="Translate11">Adobe XD</div>
+          <div class="col" id="Translate12">Recently I discovered the platform of Adobe XD that let's you create conecept designs for web and mobile applications and many more</div>
+          <div class="col" id="Translate13">Through a "Masterclass" from one of the Adobe XD experts I was able to create an animation that can be displayed in live streams that promoto the social media</div>
         </div>
 
         <table class="center"> <!-- Jason Estrada Second table with basic Spanish words -->
-            <h2 class="headlines">Basic Spanish/Español Words</h2>
+            <h2 id="Translate14"class="headlines">Basic Spanish/Español Words</h2>
             <tr>
                 <td class="categories" id="spanishword1">Hello</td> <!-- English -->
                 </tr>
@@ -175,25 +191,40 @@ function myFunction() {
             <tr>
                 <td class="categories" id="spanishword5">Pineapple</td> <!-- English -->
             </tr>
+            <tr>
+                <td class="categories" id="spanishword6">1/One</td> <!-- English -->
+            </tr>
+            <tr>
+                <td class="categories" id="spanishword7">2/Two</td> <!-- English -->
+            </tr>
+            <tr>
+                <td class="categories" id="spanishword8">3/Three</td> <!-- English -->
+            </tr>
+            <tr>
+                <td class="categories" id="spanishword9">4/Four</td> <!-- English -->
+            </tr>
+            <tr>
+                <td class="categories" id="spanishword10">5/Five</td> <!-- English -->
+            </tr>
         </table>
         <!--This button will translate the table above-->
-        <button class="button1" onclick="document.getElementById('spanishwords').innerHTML= theTranslate()">Click here to translate table</button>
-        <h2 class="headlines"> All 6 String Note for Correct Tune Guitar</h2> <!-- Second half of the blog, bold text of the title -->
+        <button class="button1" onclick="document.getElementById('spanishwords').innerHTML = theTranslate()">Click here to translate table</button>
+        <h2 class="headlines" id="Translate15"> All 6 String Note for Correct Tune Guitar</h2> <!-- Second half of the blog, bold text of the title -->
         <ul class="whitetext">
-            <li>E(Low Top String/Note)</li> <!-- List of the string notes -->
+            <li id="Translate16">E(Low Top String/Note)</li> <!-- List of the string notes -->
             <li>A</li>
             <li>D</li>
             <li>G</li>
             <li>B</li>
-            <li>E(High Bottom String/Note)</li>
+            <li id="Translate17">E(High Bottom String/Note)</li>
             <img src="images/guitar-open-string.jpg" alt="Guitar String Notes 1-6" width="500" height="500"> <!-- Image illustrating the list that is written above -->
         </ul>
-            <ol><h4 class="card-title" style="color: black;">Guitar Chord C</h4></ol>
+            <ol><h4 id="Translate18"class="card-title" style="color: black;">Guitar Chord C</h4></ol>
         <div class="card bg-dark text-white">
             <img class="card-img" src="images/c-chord.jpg" alt="Guitar Chord C">
         </div>
         <!--This button will translate the whole div box-->
-        <button class="button1" id="translatebutton2">Click here to translate!</button>
+        <button class="button1" onclick="document.getElementById('translates').innerHTML = TranslatePage()">Click here to translate!</button>
     </div>
 
 <!-- End of Jason Estrada Work -->
