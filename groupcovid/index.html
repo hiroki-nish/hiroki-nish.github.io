@@ -34,24 +34,11 @@ function theTranslate() {
 //this function will translate the rest of the text that is in Jason div box
 function TranslatePage() {
     var translates = ["Blog de Jason Estrada", "Hi! ¡Bienvenido a mi Blog/Publicaciones de Música!", "¡Este blog se usará para aprender conceptos básicos del idioma Español, lo que hago mientras estoy en cuarentena, y lo que me gusta hacer por diversión!", "Un tercio del blog será lo básico para aprender el idioma Español, lo que hago en mi casa durante ese día y la otra mitad estará dedicada a principiantes que quieran aprender acordes y las notas que se tocan para guitarra y otros instrumentos", "Sujeto", "Descripción", "Resultados", "Música", "Desde que tenía 9 años, he estado tocando instrumentos musicales", "He descubierto una plataforma de aplicación que te da la libertad de crear partituras como las que leí en la escuela secundaria y preparatoria.", "Adobe XD", "Recientemente descubrí la plataforma de Adobe XD que te permite crear diseños conceptuales para web, aplicaciones móviles y muchos más", "A través de una 'Masterclass' de uno de los expertos de Adobe XD pude crear una animación que se puede mostrar en transmisiones en vivo que promueve las redes sociales", "Palabras básicas en Español", "Nota de 6 cuerdas para guitarra de afinación correcta", "E (Cadena superior baja/Nota)", "E (Cadena inferior alta/Nota)", "El Acorde C",];
-    document.getElementById("Translate1").innerHTML = translates[0]; //"blog de.."
-    document.getElementById("Translate2").innerHTML = translates[1]; //"Hi!..."
-    document.getElementById("Translate3").innerHTML = translates[2]; //"¡Este blog.."
-    document.getElementById("Translate4").innerHTML = translates[3]; //"Un tercio.."
-    document.getElementById("Translate5").innerHTML = translates[4]; //"Subjeto"
-    document.getElementById("Translate6").innerHTML = translates[5]; //"Descripción"
-    document.getElementById("Translate7").innerHTML = translates[6]; //"Resultados"
-    document.getElementById("Translate8").innerHTML = translates[7]; //"Música"
-    document.getElementById("Translate9").innerHTML = translates[8]; //"Desde que tenía.."
-    document.getElementById("Translate10").innerHTML = translates[9]; //"He descubierto una pla.."
-    document.getElementById("Translate11").innerHTML = translates[10]; //"Adobe XD"
-    document.getElementById("Translate12").innerHTML = translates[11]; //"Recientemente..."
-    document.getElementById("Translate13").innerHTML = translates[12]; //"A través.."
-    document.getElementById("Translate14").innerHTML = translates[13]; //"Palabras.."
-    document.getElementById("Translate15").innerHTML = translates[14]; //"Nota de 6 cuerdas.."
-    document.getElementById("Translate16").innerHTML = translates[15]; //"E (Cadena superior.."
-    document.getElementById("Translate17").innerHTML = translates[16]; //"E (Cadena inferior.."
-    document.getElementById("Translate18").innerHTML = translates[17]; //"El Acorde C"
+    var idstring = "";
+    for(var i = 0; i < translates.length; i++) {
+        idstring = "Translate" + i;
+        document.getElementById(idstring).innerHTML = translates[i]; //Loops created with the help of Christa and Mark
+    }
 }
 </script> <!--End of Jason JavaScript Code-->
 
@@ -146,36 +133,36 @@ function myFunction() {
 
 <!-- Jason Estrada Work -->
 <div class="JasonDivs"> <!-- Connection to CSS .JasonDivs (Jason Estrada)-->
-<h1 id= "Translate1" style="background-color: aqua; font-size: x-large;">Jason Estrada Blog</h1> 
-<h1 id="Translate2" class="whitetext"><strong>Hola!</strong> Welcome to My <em>Blog/Music</em> Posts!</h1> <!-- first line of code in HTML -->
+<h1 id= "Translate0" style="background-color: aqua; font-size: x-large;">Jason Estrada Blog</h1> 
+<h1 id="Translate1" class="whitetext"><strong>Hola!</strong> Welcome to My <em>Blog/Music</em> Posts!</h1> <!-- first line of code in HTML -->
 <span class="whitetext">
-    <p id="Translate3">This blog will be used for learning basics for the <em>Spanish/Español</em> language, what I do while in <em>Quarantine</em> and what I like to do for fun!</p> <!-- Second line of code in HTML -->
-    <p id="Translate4">A third of the blog will be the basics for learning the Spanish/Español language, what I do at my house during that day and the other half will be dedicated for beginners that want to learn chords and the notes that is played for guitar and other instruments.</p> <!-- Third line of code in HTML -->
+    <p id="Translate2">This blog will be used for learning basics for the <em>Spanish/Español</em> language, what I do while in <em>Quarantine</em> and what I like to do for fun!</p> <!-- Second line of code in HTML -->
+    <p id="Translate3">A third of the blog will be the basics for learning the Spanish/Español language, what I do at my house during that day and the other half will be dedicated for beginners that want to learn chords and the notes that is played for guitar and other instruments.</p> <!-- Third line of code in HTML -->
 </span>
 <!--David: changes table so that ol tags are gone.-->
     
         <!--Jason added a grid in replace of the table.-->
     <div class="row">
-        <div class="col" id="Translate5">Subject</div>
-        <div class="col" id="Translate6">Description</div>
-        <div class="col" id="Translate7">Results</div>
+        <div class="col" id="Translate4">Subject</div>
+        <div class="col" id="Translate5">Description</div>
+        <div class="col" id="Translate6">Results</div>
       </div>
   
       <div class="row">
-          <div class="col" id="Translate8">Music</div>
-          <div class="col" id="Translate9">Since I was 9 years old, I have been playing musical instruments</div>
-          <div class="col" id="Translate10">I have discovered an application platform that gives you the freedom to create sheet music like the ones I read in Middle and High School</div>
+          <div class="col" id="Translate7">Music</div>
+          <div class="col" id="Translate8">Since I was 9 years old, I have been playing musical instruments</div>
+          <div class="col" id="Translate9">I have discovered an application platform that gives you the freedom to create sheet music like the ones I read in Middle and High School</div>
       </div>
   
   
       <div class="row">
-          <div class="col" id="Translate11">Adobe XD</div>
-          <div class="col" id="Translate12">Recently I discovered the platform of Adobe XD that let's you create conecept designs for web and mobile applications and many more</div>
-          <div class="col" id="Translate13">Through a "Masterclass" from one of the Adobe XD experts I was able to create an animation that can be displayed in live streams that promoto the social media</div>
+          <div class="col" id="Translate10">Adobe XD</div>
+          <div class="col" id="Translate11">Recently I discovered the platform of Adobe XD that let's you create conecept designs for web and mobile applications and many more</div>
+          <div class="col" id="Translate12">Through a "Masterclass" from one of the Adobe XD experts I was able to create an animation that can be displayed in live streams that promoto the social media</div>
         </div>
 
         <table class="center"> <!-- Jason Estrada Second table with basic Spanish words -->
-            <h2 id="Translate14"class="headlines">Basic Spanish/Español Words</h2>
+            <h2 id="Translate13"class="headlines">Basic Spanish/Español Words</h2>
             <tr>
                 <td class="categories" id="spanishword0">Hello</td> <!-- English -->
                 </tr>
@@ -209,17 +196,17 @@ function myFunction() {
         </table>
         <!--This button will translate the table above-->
         <button class="button1" onclick="document.getElementById('spanishwords').innerHTML = theTranslate()">Click here to translate table</button>
-        <h2 class="headlines" id="Translate15"> All 6 String Note for Correct Tune Guitar</h2> <!-- Second half of the blog, bold text of the title -->
+        <h2 class="headlines" id="Translate14"> All 6 String Note for Correct Tune Guitar</h2> <!-- Second half of the blog, bold text of the title -->
         <ul class="whitetext">
-            <li id="Translate16">E(Low Top String/Note)</li> <!-- List of the string notes -->
+            <li id="Translate15">E(Low Top String/Note)</li> <!-- List of the string notes -->
             <li>A</li>
             <li>D</li>
             <li>G</li>
             <li>B</li>
-            <li id="Translate17">E(High Bottom String/Note)</li>
+            <li id="Translate16">E(High Bottom String/Note)</li>
             <img src="images/guitar-open-string.jpg" alt="Guitar String Notes 1-6" width="500" height="500"> <!-- Image illustrating the list that is written above -->
         </ul>
-            <ol><h4 id="Translate18"class="card-title" style="color: black;">Guitar Chord C</h4></ol>
+            <ol><h4 id="Translate17"class="card-title" style="color: black;">Guitar Chord C</h4></ol>
         <div class="card bg-dark text-white">
             <img class="card-img" src="images/c-chord.jpg" alt="Guitar Chord C">
         </div>
