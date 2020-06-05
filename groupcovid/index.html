@@ -15,25 +15,21 @@
 <title>Best Website on Earth</title> <!-- This the Name for the Tab -->
 
 <!--David: added Bootstrap, CSS, and JS Link-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Phillip started the stylesheet -->
 
 <script> //Jason JavaScript Code
 //this function will translate the table that has the basic Spanish/English table
 function theTranslate() {
     var spanishwords = ["Hola", "Como estas?", "Familia", "Me gusta", "Piña", "Uno", "Dos", "Tres", "Cuatro", "Cinco"];
-    document.getElementById("spanishword1").innerHTML = spanishwords[0]; //"Hi"
-    document.getElementById("spanishword2").innerHTML = spanishwords[1]; //"How are you?"
-    document.getElementById("spanishword3").innerHTML = spanishwords[2]; //"Family"
-    document.getElementById("spanishword4").innerHTML = spanishwords[3]; //"I like"
-    document.getElementById("spanishword5").innerHTML = spanishwords[4]; //"Pineapple"
-    document.getElementById("spanishword6").innerHTML = spanishwords[5]; //"One"
-    document.getElementById("spanishword7").innerHTML = spanishwords[6]; //"Two"
-    document.getElementById("spanishword8").innerHTML = spanishwords[7]; //"Three"
-    document.getElementById("spanishword9").innerHTML = spanishwords[8]; //"Four"
-    document.getElementById("spanishword10").innerHTML = spanishwords[9]; //"Five"
+    var idstring = "";
+    for(var i = 0; i < spanishwords.length; i++) {
+        idstring = "spanishword" + i;
+        document.getElementById(idstring).innerHTML = spanishwords[i]; //Loops created with the help of Christa and Mark
+    }
 }
 //this function will translate the rest of the text that is in Jason div box
 function TranslatePage() {
@@ -121,7 +117,7 @@ function TranslatePage() {
     
 var kakunin = confirm("Please click OK"); /*Hiroki adding confimation*/
 
-if(kakunin==true){/*conditional function*/
+if (kakunin==true){/*conditional function*/
     document.write("<h1>Welcome to our page!</h1>");
     document.write("<br>");
     document.write("You visited here on  "+ Date());
@@ -140,7 +136,11 @@ if(kakunin==true){/*conditional function*/
 
 <script>
 function myFunction() {
-  document.getElementById("demo").innerHTML = "You will live a happy life UwU";
+    var date = new Date();
+    var today = date.getDay();
+    if (today == 4) {
+        document.getElementById("demo").innerHTML = "You will live a happy life UwU";
+    }
 }
 </script>
 
@@ -177,34 +177,34 @@ function myFunction() {
         <table class="center"> <!-- Jason Estrada Second table with basic Spanish words -->
             <h2 id="Translate14"class="headlines">Basic Spanish/Español Words</h2>
             <tr>
-                <td class="categories" id="spanishword1">Hello</td> <!-- English -->
+                <td class="categories" id="spanishword0">Hello</td> <!-- English -->
                 </tr>
                 <tr>
-                <td class="categories" id="spanishword2">How are you?</td> <!-- English -->
+                <td class="categories" id="spanishword1">How are you?</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories" id="spanishword3">Family</td> <!-- English -->
+                <td class="categories" id="spanishword2">Family</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories" id="spanishword4">I like</td> <!-- English -->
+                <td class="categories" id="spanishword3">I like</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories" id="spanishword5">Pineapple</td> <!-- English -->
+                <td class="categories" id="spanishword4">Pineapple</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories" id="spanishword6">1/One</td> <!-- English -->
+                <td class="categories" id="spanishword5">1/One</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories" id="spanishword7">2/Two</td> <!-- English -->
+                <td class="categories" id="spanishword6">2/Two</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories" id="spanishword8">3/Three</td> <!-- English -->
+                <td class="categories" id="spanishword7">3/Three</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories" id="spanishword9">4/Four</td> <!-- English -->
+                <td class="categories" id="spanishword8">4/Four</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories" id="spanishword10">5/Five</td> <!-- English -->
+                <td class="categories" id="spanishword9">5/Five</td> <!-- English -->
             </tr>
         </table>
         <!--This button will translate the table above-->
@@ -490,7 +490,7 @@ function myFunction() {
         <a href="#" style="background-color:navy; color: white;" class="btn btn-info" role="button" >Back to Top</a> <!-- Phillip: Added button that references back to the top -->
     <script> 
     function helloUser() {
-        alert("Yo whats up?! Welcome to the BEST TEAM: TEAM 4!");
+        alert("Yo whats up?! Welcome to the BEST TEAM: TEAM 4!"); // Phillip created a function that created an alert event 
     }
     </script>    
 </div>
