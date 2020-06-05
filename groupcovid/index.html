@@ -29,13 +29,14 @@ function theTranslate() {
     for(var i = 0; i < spanishwords.length; i++) {
         idstring = "spanishword" + i;
         document.getElementById(idstring).innerHTML = spanishwords[i]; //Loops created with the help of Christa and Mark
-        else {
-            var idstring1 = "";
-    for(var i = 0; i < spanishwords.length; i++) {
-        idstring1 = "spanishword" + i;
-        document.getElementById(idstring1).innerHTML = spanishwords[i];
-        }
     }
+}
+function theTranslate2() {
+    var englishwords = ["Hello", "How are you?", "Family", "I like", "Pineapple", "1/One", "2/Two", "3/Three", "4/Four", "5/Five",]
+    for(var i = 0; i < englishwords.length; i++) {
+        idstring1 = "englishword" + i;
+        document.getElementById(idstring1).innerHTML = englishwords[i];
+        }
 }
 //this function will translate the rest of the text that is in Jason div box
 function TranslatePage() {
@@ -170,38 +171,38 @@ function myFunction() {
         <table class="center"> <!-- Jason Estrada Second table with basic Spanish words -->
             <h2 id="Translate13"class="headlines">Basic Spanish/Español Words</h2>
             <tr>
-                <td class="categories" id="spanishword0">Hello</td> <!-- English -->
+                <td class="categories" id="spanishword0" id="englishword0">Hello</td> <!-- English -->
                 </tr>
                 <tr>
-                <td class="categories" id="spanishword1">How are you?</td> <!-- English -->
+                <td class="categories" id="spanishword1" id="englishword1">How are you?</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories" id="spanishword2">Family</td> <!-- English -->
+                <td class="categories" id="spanishword2" id="englishword2">Family</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories" id="spanishword3">I like</td> <!-- English -->
+                <td class="categories" id="spanishword3" id="englishword3">I like</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories" id="spanishword4">Pineapple</td> <!-- English -->
+                <td class="categories" id="spanishword4" id="englishword4">Pineapple</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories" id="spanishword5">1/One</td> <!-- English -->
+                <td class="categories" id="spanishword5" id="englishword5">1/One</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories" id="spanishword6">2/Two</td> <!-- English -->
+                <td class="categories" id="spanishword6" id="englishword6">2/Two</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories" id="spanishword7">3/Three</td> <!-- English -->
+                <td class="categories" id="spanishword7" id="englishword7">3/Three</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories" id="spanishword8">4/Four</td> <!-- English -->
+                <td class="categories" id="spanishword8" id="englishword8">4/Four</td> <!-- English -->
             </tr>
             <tr>
-                <td class="categories" id="spanishword9">5/Five</td> <!-- English -->
+                <td class="categories" id="spanishword9" id="englishword9">5/Five</td> <!-- English -->
             </tr>
         </table>
         <!--This button will translate the table above-->
-        <button class="button1" onclick="document.getElementById('spanishwords').innerHTML = theTranslate()">Click here to translate table</button>
+        <button class="button1" onclick="document.getElementById('spanishwords').innerHTML = theTranslate()" onclick="document.getElementById('englishwords').innerHTML = theTranslate2()">Click here to translate table</button>
         <h2 class="headlines" id="Translate14"> All 6 String Note for Correct Tune Guitar</h2> <!-- Second half of the blog, bold text of the title -->
         <ul class="whitetext">
             <li id="Translate15">E(Low Top String/Note)</li> <!-- List of the string notes -->
